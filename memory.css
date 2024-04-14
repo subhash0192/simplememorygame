@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.memory-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.symbol {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flip .symbol {
+  display: block;
+}
+
+.matched .symbol {
+  display: block;
+  background-color: grey;
+}
